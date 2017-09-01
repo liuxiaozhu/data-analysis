@@ -91,3 +91,8 @@ def max_employment2(countries, employment):
 
 print max_employment(countries, employment)
 print max_employment2(countries, employment)
+
+def standardize_data(values):
+    return (values - values.mean()) / values.std()
+
+print standardize_data(employment)
